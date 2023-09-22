@@ -1,0 +1,12 @@
+import random
+
+caracteres_de_la_contra = "qwertyuiopñlkjhgfdsazxcvbnm12345677890"
+
+variable = int(input("coloque la longitud de su contraseña"))
+
+contrasena = ""
+
+for i in range(variable):
+    contrasena += random.choice(caracteres_de_la_contra)
+
+print(contrasena)
